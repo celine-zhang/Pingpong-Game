@@ -8,7 +8,6 @@ const reset = document.querySelector('#reset');
 const pointDash = document.querySelector('#pointDash');
 const winPoint = document.querySelector('#number');
 
-
 winPoint.addEventListener('input',function(){
     player1plus.disabled = false;
     player2plus.disabled = false;
