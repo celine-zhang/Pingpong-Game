@@ -9,6 +9,12 @@ const pointDash = document.querySelector('#pointDash');
 const winPoint = document.querySelector('#number');
 
 
+winPoint.addEventListener('input',function(){
+    player1plus.disabled = false;
+    player2plus.disabled = false;
+    reset.disabled=false;
+})
+
 player1plus.addEventListener('click',function(){
     player1 = player1 + 1;
     pointDash.innerHTML = `<strong id="p1point">${player1}</strong> to <strong id="p2point">${player2}</strong>`;
